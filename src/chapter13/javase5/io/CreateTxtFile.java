@@ -14,7 +14,7 @@ public class CreateTxtFile {
 	 */
 	public static void main(String[] args) {
 		//TODO: 如何解决在C盘无法创建文件的问题
-		File filename = new File("C:\\2.gwl");
+		File filename = new File("c:\\2.gwl");
 		
 		String filein = "hello";
 		
@@ -22,6 +22,7 @@ public class CreateTxtFile {
 		try {
 			mm = new RandomAccessFile(filename, "rw");
 			mm.writeBytes(filein);
+			System.out.println("书写完毕");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
