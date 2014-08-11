@@ -16,7 +16,7 @@ public class CodeCounter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Counter c = new Counter("D:\\SandBox\\workspace\\");// 在这里修改目录
+		Counter c = new Counter("C:\\Users\\Sinbad\\git\\JavaSE5EditionCR\\src");// 在这里修改目录
 		c.countJavaFile(c.projectPath);
 
 	}

@@ -31,12 +31,12 @@ public class CodeCounterPro {
   
     public static void main(String[] args) {  
     	startTime = System.currentTimeMillis();
-        File file = new File("D:\\SandBox\\workspace\\"); // 在这里输入需要统计的文件夹路径  
+        File file = new File("C:\\Users\\Sinbad\\git\\JavaSE5EditionCR\\src"); // 在这里输入需要统计的文件夹路径  
         getChild(file);  
-        System.out.println("有效代码行数: " + normalLine);  
-        System.out.println("注释行数: " + commentLine);  
-        System.out.println("空白行数: " + whiteLine);  
-        System.out.println("总代码行数: " + totalLine);  
+        System.out.println("有效代码行数: " + normalLine +" 行");  
+        System.out.println("注释行数: " + commentLine +" 行");  
+        System.out.println("空白行数: " + whiteLine +" 行");  
+        System.out.println("总代码行数: " + totalLine +" 行");  
         endTime = System.currentTimeMillis();
         System.out.println("总执行时间： "+  (endTime - startTime ) + " 毫秒。");
     }  
